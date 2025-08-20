@@ -1,0 +1,98 @@
+.compose {
+  padding: 28px;
+  background: white;
+  border-top: 1px solid #f3f4f6;
+  display: flex;
+  gap: 14px;
+  align-items: flex-end;
+}
+
+.inputContainer {
+  flex: 1;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  min-height: 56px;
+  max-height: 120px;
+  padding: 18px 22px;
+  border: 1px solid #d1d5db;
+  border-radius: 24px;
+  background: #f9fafb;
+  font-size: 18px;
+  line-height: 1.4;
+  resize: none;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  color: #374151;
+}
+
+.input:focus {
+  border-color: #442C8B;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(68, 44, 139, 0.1);
+}
+
+.input::placeholder {
+  color: #9ca3af;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.sendButton {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #442C8B;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(68, 44, 139, 0.2);
+  flex-shrink: 0;
+}
+
+.sendButton:hover:not(:disabled) {
+  background: #665AA7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(68, 44, 139, 0.3);
+}
+
+.sendButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.sendButton:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.sendButton svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  transition: transform 0.2s ease;
+}
+
+.sendButton:hover:not(:disabled) svg {
+  transform: scale(1.1);
+}
+
+.resizeButton {
+  background: rgba(68, 44, 139, 0.1);
+  border: 1px solid rgba(68, 44, 139, 0.2);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #442C8B;
+}
+
+.resizeButton:hover {
+  background: rgba(68, 44, 139, 0.15);
+}

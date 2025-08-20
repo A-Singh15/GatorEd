@@ -1,0 +1,35 @@
+.footer {
+  padding: 20px 24px;
+  background: #f8fafc;
+  border-top: 3px solid #e5e7eb;
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+  line-height: 1.4;
+  border-radius: 0 0 20px 20px;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.footerContent span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(0, 102, 51, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 102, 51, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.footerContent span:hover {
+  background: rgba(0, 102, 51, 0.1);
+}

@@ -1,0 +1,101 @@
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 0;
+  animation: fadeInUp 0.3s ease-out;
+  gap: 8px;
+}
+
+.message {
+  max-width: 85%;
+  padding: 18px 22px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  position: relative;
+  transition: all 0.2s ease;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #374151;
+  align-self: flex-start;
+}
+
+.message.userMessage {
+  align-self: flex-end;
+}
+
+.message:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.message p {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #374151;
+}
+
+.message p:last-child {
+  margin-bottom: 0;
+}
+
+.message ul, .message ol {
+  margin: 12px 0;
+  padding-left: 22px;
+}
+
+.message li {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #374151;
+}
+
+.message a {
+  color: #442C8B;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  border-bottom: 1px solid #442C8B;
+  transition: all 0.2s ease;
+}
+
+.message a:hover {
+  color: #665AA7;
+  border-bottom-color: #665AA7;
+}
+
+.messageRating {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.messageFeedbackThanks {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: #f0f0f8;
+  border: 1px solid #d1c7e0;
+  border-radius: 8px;
+  color: #442C8B;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
